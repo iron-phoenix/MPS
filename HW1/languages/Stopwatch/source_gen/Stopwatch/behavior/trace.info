@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="Action_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Stopwatch.behavior.Action_BehaviorDescriptor" />
+  <unitInfo fileName="Appearance_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Stopwatch.behavior.Appearance_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="36" endPosition="0" unitName="Stopwatch.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="Button_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Stopwatch.behavior.Button_BehaviorDescriptor" />
+  <unitInfo fileName="ColorReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Stopwatch.behavior.ColorReference_BehaviorDescriptor" />
+  <unitInfo fileName="Stopwatch_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Stopwatch.behavior.Stopwatch_BehaviorDescriptor" />
+  <unitInfo fileName="Time_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Stopwatch.behavior.Time_BehaviorDescriptor" />
+  <unitInfo fileName="Timeline_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Stopwatch.behavior.Timeline_BehaviorDescriptor" />
+</debugInfo>
+
