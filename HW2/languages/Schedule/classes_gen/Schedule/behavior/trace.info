@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="32" endPosition="0" unitName="Schedule.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="DaySchedule_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Schedule.behavior.DaySchedule_BehaviorDescriptor" />
+  <unitInfo fileName="Lecture_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Schedule.behavior.Lecture_BehaviorDescriptor" />
+  <unitInfo fileName="Schedule_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Schedule.behavior.Schedule_BehaviorDescriptor" />
+  <unitInfo fileName="TimeRange_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Schedule.behavior.TimeRange_BehaviorDescriptor" />
+  <unitInfo fileName="Time_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Schedule.behavior.Time_BehaviorDescriptor" />
+</debugInfo>
+

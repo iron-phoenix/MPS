@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="5jiq" modelUID="r:61dd3078-bf16-4282-aa45-1e303ac3acd8(Schedule.structure)" version="-1" />
+    </dependencies>
+    <rename id="5jiq.4951184322560825167" type="CHILD" from="lectures" to="daySchedules" />
+  </StructureModification>
+</history>
+

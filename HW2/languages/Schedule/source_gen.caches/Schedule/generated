@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="81otwbqeu7xe7ftst2txkcq8f3b6pyu">
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:60dcb707-4889-4daa-8c91-f9d2894a8bdf(Schedule.typesystem)" hash="-e1jkylea9u8hh7aohqyd06cv9nnphnd" />
+  <dep model="r:b01ce9c6-dec2-41a8-ab81-ef0fd3da9994(Schedule.editor)" hash="-dbcodzwn2oiksm524ajwdkxydjq46zc" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common dependsOnNodes="true">
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:60dcb707-4889-4daa-8c91-f9d2894a8bdf(Schedule.typesystem)" />
+    <dep model="r:b01ce9c6-dec2-41a8-ab81-ef0fd3da9994(Schedule.editor)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="Language.java" />
+  </common>
+</dependencies>
+
