@@ -6,6 +6,8 @@ import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.generator.template.IfMacroContext;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
@@ -35,6 +37,14 @@ public class QueriesGenerated {
 
   public static Object propertyMacro_GetPropertyValue_568337036394433139(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "name");
+  }
+
+  public static boolean ifMacro_Condition_9206967446064527143(final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "lectures", true)).isNotEmpty();
+  }
+
+  public static boolean ifMacro_Condition_9206967446064163004(final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "daySchedules", true)).isNotEmpty();
   }
 
   public static Iterable<SNode> sourceNodesQuery_568337036394327474(final SourceSubstituteMacroNodesContext _context) {
