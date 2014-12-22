@@ -10,6 +10,7 @@ import jetbrains.mps.generator.template.IfMacroContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import java.util.Comparator;
 
 @Generated
 public class QueriesGenerated {
@@ -17,6 +18,14 @@ public class QueriesGenerated {
 
   public static Object propertyMacro_GetPropertyValue_568337036394331826(final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(_context.getNode(), "day", null);
+  }
+
+  public static Object propertyMacro_GetPropertyValue_7428680666542788534(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString_def(_context.getNode(), "day", null);
+  }
+
+  public static Object propertyMacro_GetPropertyValue_7428680666542843980(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name");
   }
 
   public static Object propertyMacro_GetPropertyValue_568337036394444179(final PropertyMacroContext _context) {
@@ -35,10 +44,6 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getNode(), "presenter");
   }
 
-  public static Object propertyMacro_GetPropertyValue_568337036394433139(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name");
-  }
-
   public static boolean ifMacro_Condition_9206967446064527143(final IfMacroContext _context) {
     return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "lectures", true)).isNotEmpty();
   }
@@ -51,7 +56,20 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(_context.getNode(), "daySchedules", true);
   }
 
-  public static Iterable<SNode> sourceNodesQuery_568337036394405210(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(_context.getNode(), "lectures", true);
+  public static Iterable<SNode> sourceNodesQuery_2474195710514949531(final SourceSubstituteMacroNodesContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "lectures", true)).sort(new Comparator<SNode>() {
+      public int compare(SNode a, SNode b) {
+        if (SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(a, "timeRange", true), "begin", true), "hours") == SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(b, "timeRange", true), "begin", true), "hours")) {
+          if (SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(a, "timeRange", true), "begin", true), "minutes") < SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(b, "timeRange", true), "begin", true), "minutes")) {
+            return -1;
+          }
+          return 1;
+        }
+        if (SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(a, "timeRange", true), "begin", true), "hours") < SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(b, "timeRange", true), "begin", true), "hours")) {
+          return -1;
+        }
+        return 1;
+      }
+    }, true);
   }
 }

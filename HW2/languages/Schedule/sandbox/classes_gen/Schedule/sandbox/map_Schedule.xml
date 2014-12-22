@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ru">
+    <meta charset="UTF8" />
+    <title>Schedule</title>
+  </head>
+  <body>
+    <days>
+      <day name="Monday">
+        <table>
+          <caption>
+            <h1 style="float:left">Monday</h1>
+          </caption>
+          <tr>
+            <td>
+              <b>Lecture name</b>
+            </td>
+            <td>
+              <b>Begin time</b>
+            </td>
+            <td>
+              <b>End time</b>
+            </td>
+            <td>
+              <b>Room</b>
+            </td>
+            <td>
+              <b>Presenter</b>
+            </td>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>9:0</td>
+            <td>9:20</td>
+            <td>234</td>
+            <td>Vasily Pupkin Jr.</td>
+          </tr>
+          <tr>
+            <td>dzfdfdfds</td>
+            <td>9:1</td>
+            <td>9:30</td>
+            <td>5</td>
+            <td>ads</td>
+          </tr>
+          <tr>
+            <td>Programming</td>
+            <td>10:0</td>
+            <td>11:0</td>
+            <td>123</td>
+            <td>Vasily Pupkin</td>
+          </tr>
+          <tr>
+            <td>Lecture History</td>
+            <td>12:0</td>
+            <td>13:0</td>
+            <td>123</td>
+            <td>Vasiliy Pupkin</td>
+          </tr>
+        </table>
+      </day>
+      <day name="Friday">
+        <table>
+          <caption>
+            <h1 style="float:left">Friday</h1>
+          </caption>
+          <tr>
+            <td>
+              <b>Lecture name</b>
+            </td>
+            <td>
+              <b>Begin time</b>
+            </td>
+            <td>
+              <b>End time</b>
+            </td>
+            <td>
+              <b>Room</b>
+            </td>
+            <td>
+              <b>Presenter</b>
+            </td>
+          </tr>
+          <tr>
+            <td>Programming</td>
+            <td>9:0</td>
+            <td>18:0</td>
+            <td>111</td>
+            <td>Bill Gates</td>
+          </tr>
+        </table>
+      </day>
+      <day name="Sunday">
+        <table>
+          <caption>
+            <h1 style="float:left">Sunday</h1>
+          </caption>
+          <tr>
+            <td>
+              <b>Lecture name</b>
+            </td>
+            <td>
+              <b>Begin time</b>
+            </td>
+            <td>
+              <b>End time</b>
+            </td>
+            <td>
+              <b>Room</b>
+            </td>
+            <td>
+              <b>Presenter</b>
+            </td>
+          </tr>
+          <tr>
+            <td>Programming</td>
+            <td>7:0</td>
+            <td>21:0</td>
+            <td>777</td>
+            <td>Miguel de Icaza</td>
+          </tr>
+        </table>
+      </day>
+    </days>
+  </body>
+</html>

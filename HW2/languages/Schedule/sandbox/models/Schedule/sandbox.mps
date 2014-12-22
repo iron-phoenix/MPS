@@ -54,6 +54,21 @@
           </node>
         </node>
       </node>
+      <node role="lectures" roleId="5jiq.4951184322560905236" type="5jiq.Lecture" typeId="5jiq.4951184322560825130" id="2474195710516200795" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="dzfdfdfds" />
+        <property name="room" nameId="5jiq.4951184322560826227" value="5" />
+        <property name="presenter" nameId="5jiq.4951184322560826225" value="ads" />
+        <node role="timeRange" roleId="5jiq.4951184322560826294" type="5jiq.TimeRange" typeId="5jiq.4951184322560826248" id="2474195710516200796" nodeInfo="ng">
+          <node role="begin" roleId="5jiq.4951184322560826276" type="5jiq.Time" typeId="5jiq.4951184322560826257" id="2474195710516200797" nodeInfo="ng">
+            <property name="hours" nameId="5jiq.4951184322560826258" value="09" />
+            <property name="minutes" nameId="5jiq.4951184322560826260" value="01" />
+          </node>
+          <node role="end" roleId="5jiq.4951184322560826278" type="5jiq.Time" typeId="5jiq.4951184322560826257" id="2474195710516200798" nodeInfo="ng">
+            <property name="hours" nameId="5jiq.4951184322560826258" value="09" />
+            <property name="minutes" nameId="5jiq.4951184322560826260" value="30" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="daySchedules" roleId="5jiq.4951184322560825167" type="5jiq.DaySchedule" typeId="5jiq.4951184322560877940" id="5187177448639831784" nodeInfo="ng">
       <property name="day" nameId="5jiq.4951184322560877941" value="Friday" />
