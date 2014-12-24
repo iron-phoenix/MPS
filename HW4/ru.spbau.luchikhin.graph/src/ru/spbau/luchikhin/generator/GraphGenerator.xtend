@@ -40,7 +40,7 @@ class GraphGenerator implements IGenerator {
 		}
 		
 		if (object instanceof NoConnection) {
-			return compile(object as NoConnection);			
+			return compile(object as NoConnection);
 		}
 	}
 	

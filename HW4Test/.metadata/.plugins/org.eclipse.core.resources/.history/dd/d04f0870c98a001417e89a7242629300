@@ -1,0 +1,11 @@
+class A {
+	public List<Class> getDependencies() {
+		return Arrays.asList(B.class);
+	}
+}
+
+class B {
+	public List<Class> getDependencies() {
+		return Arrays.asList(A.class);
+	}
+}

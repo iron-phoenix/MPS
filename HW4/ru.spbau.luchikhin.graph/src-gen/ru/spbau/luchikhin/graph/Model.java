@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link ru.spbau.luchikhin.graph.Model#getNode <em>Node</em>}</li>
+ *   <li>{@link ru.spbau.luchikhin.graph.Model#getNodes <em>Nodes</em>}</li>
  * </ul>
  * </p>
  *
@@ -25,19 +25,19 @@ import org.eclipse.emf.ecore.EObject;
 public interface Model extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Node</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Nodes</b></em>' containment reference list.
    * The list contents are of type {@link ru.spbau.luchikhin.graph.Node}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Node</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Nodes</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Node</em>' containment reference list.
-   * @see ru.spbau.luchikhin.graph.GraphPackage#getModel_Node()
+   * @return the value of the '<em>Nodes</em>' containment reference list.
+   * @see ru.spbau.luchikhin.graph.GraphPackage#getModel_Nodes()
    * @model containment="true"
    * @generated
    */
-  EList<Node> getNode();
+  EList<Node> getNodes();
 
 } // Model

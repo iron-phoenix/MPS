@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalGraphParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'node'", "';'", "'is connected with ['", "']'", "', '", "'isolated'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'node'", "';'", "'is connected with '", "', '", "'isolated'"
     };
     public static final int RULE_ID=4;
     public static final int RULE_WS=9;
@@ -30,7 +30,6 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
     public static final int RULE_ANY_OTHER=10;
     public static final int RULE_SL_COMMENT=8;
     public static final int T__15=15;
-    public static final int T__16=16;
     public static final int RULE_INT=5;
     public static final int T__11=11;
     public static final int RULE_ML_COMMENT=7;
@@ -107,20 +106,20 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleModel"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:69:1: ruleModel : ( ( rule__Model__NodeAssignment )* ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:69:1: ruleModel : ( ( rule__Model__NodesAssignment )* ) ;
     public final void ruleModel() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:73:2: ( ( ( rule__Model__NodeAssignment )* ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:74:1: ( ( rule__Model__NodeAssignment )* )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:73:2: ( ( ( rule__Model__NodesAssignment )* ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:74:1: ( ( rule__Model__NodesAssignment )* )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:74:1: ( ( rule__Model__NodeAssignment )* )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:75:1: ( rule__Model__NodeAssignment )*
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:74:1: ( ( rule__Model__NodesAssignment )* )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:75:1: ( rule__Model__NodesAssignment )*
             {
-             before(grammarAccess.getModelAccess().getNodeAssignment()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:76:1: ( rule__Model__NodeAssignment )*
+             before(grammarAccess.getModelAccess().getNodesAssignment()); 
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:76:1: ( rule__Model__NodesAssignment )*
             loop1:
             do {
                 int alt1=2;
@@ -133,10 +132,10 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
                 switch (alt1) {
             	case 1 :
-            	    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:76:2: rule__Model__NodeAssignment
+            	    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:76:2: rule__Model__NodesAssignment
             	    {
-            	    pushFollow(FOLLOW_rule__Model__NodeAssignment_in_ruleModel94);
-            	    rule__Model__NodeAssignment();
+            	    pushFollow(FOLLOW_rule__Model__NodesAssignment_in_ruleModel94);
+            	    rule__Model__NodesAssignment();
 
             	    state._fsp--;
 
@@ -149,7 +148,7 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
                 }
             } while (true);
 
-             after(grammarAccess.getModelAccess().getNodeAssignment()); 
+             after(grammarAccess.getModelAccess().getNodesAssignment()); 
 
             }
 
@@ -416,7 +415,7 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
             if ( (LA2_0==13) ) {
                 alt2=1;
             }
-            else if ( (LA2_0==16) ) {
+            else if ( (LA2_0==15) ) {
                 alt2=2;
             }
             else {
@@ -835,17 +834,17 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__Group__0__Impl"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:335:1: rule__Connection__Group__0__Impl : ( 'is connected with [' ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:335:1: rule__Connection__Group__0__Impl : ( 'is connected with ' ) ;
     public final void rule__Connection__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:339:1: ( ( 'is connected with [' ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:340:1: ( 'is connected with [' )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:339:1: ( ( 'is connected with ' ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:340:1: ( 'is connected with ' )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:340:1: ( 'is connected with [' )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:341:1: 'is connected with ['
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:340:1: ( 'is connected with ' )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:341:1: 'is connected with '
             {
              before(grammarAccess.getConnectionAccess().getIsConnectedWithKeyword_0()); 
             match(input,13,FOLLOW_13_in_rule__Connection__Group__0__Impl638); 
@@ -957,22 +956,17 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__Group__2"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:383:1: rule__Connection__Group__2 : rule__Connection__Group__2__Impl rule__Connection__Group__3 ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:383:1: rule__Connection__Group__2 : rule__Connection__Group__2__Impl ;
     public final void rule__Connection__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:387:1: ( rule__Connection__Group__2__Impl rule__Connection__Group__3 )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:388:2: rule__Connection__Group__2__Impl rule__Connection__Group__3
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:387:1: ( rule__Connection__Group__2__Impl )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:388:2: rule__Connection__Group__2__Impl
             {
             pushFollow(FOLLOW_rule__Connection__Group__2__Impl_in_rule__Connection__Group__2729);
             rule__Connection__Group__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Connection__Group__3_in_rule__Connection__Group__2732);
-            rule__Connection__Group__3();
 
             state._fsp--;
 
@@ -995,35 +989,35 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__Group__2__Impl"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:395:1: rule__Connection__Group__2__Impl : ( ( rule__Connection__Group_2__0 )* ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:394:1: rule__Connection__Group__2__Impl : ( ( rule__Connection__Group_2__0 )* ) ;
     public final void rule__Connection__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:399:1: ( ( ( rule__Connection__Group_2__0 )* ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:400:1: ( ( rule__Connection__Group_2__0 )* )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:398:1: ( ( ( rule__Connection__Group_2__0 )* ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:399:1: ( ( rule__Connection__Group_2__0 )* )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:400:1: ( ( rule__Connection__Group_2__0 )* )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:401:1: ( rule__Connection__Group_2__0 )*
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:399:1: ( ( rule__Connection__Group_2__0 )* )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:400:1: ( rule__Connection__Group_2__0 )*
             {
              before(grammarAccess.getConnectionAccess().getGroup_2()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:402:1: ( rule__Connection__Group_2__0 )*
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:401:1: ( rule__Connection__Group_2__0 )*
             loop3:
             do {
                 int alt3=2;
                 int LA3_0 = input.LA(1);
 
-                if ( (LA3_0==15) ) {
+                if ( (LA3_0==14) ) {
                     alt3=1;
                 }
 
 
                 switch (alt3) {
             	case 1 :
-            	    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:402:2: rule__Connection__Group_2__0
+            	    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:401:2: rule__Connection__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__Connection__Group_2__0_in_rule__Connection__Group__2__Impl759);
+            	    pushFollow(FOLLOW_rule__Connection__Group_2__0_in_rule__Connection__Group__2__Impl756);
             	    rule__Connection__Group_2__0();
 
             	    state._fsp--;
@@ -1059,92 +1053,22 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Connection__Group__2__Impl"
 
 
-    // $ANTLR start "rule__Connection__Group__3"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:412:1: rule__Connection__Group__3 : rule__Connection__Group__3__Impl ;
-    public final void rule__Connection__Group__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:416:1: ( rule__Connection__Group__3__Impl )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:417:2: rule__Connection__Group__3__Impl
-            {
-            pushFollow(FOLLOW_rule__Connection__Group__3__Impl_in_rule__Connection__Group__3790);
-            rule__Connection__Group__3__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Connection__Group__3"
-
-
-    // $ANTLR start "rule__Connection__Group__3__Impl"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:423:1: rule__Connection__Group__3__Impl : ( ']' ) ;
-    public final void rule__Connection__Group__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:427:1: ( ( ']' ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:428:1: ( ']' )
-            {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:428:1: ( ']' )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:429:1: ']'
-            {
-             before(grammarAccess.getConnectionAccess().getRightSquareBracketKeyword_3()); 
-            match(input,14,FOLLOW_14_in_rule__Connection__Group__3__Impl818); 
-             after(grammarAccess.getConnectionAccess().getRightSquareBracketKeyword_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Connection__Group__3__Impl"
-
-
     // $ANTLR start "rule__Connection__Group_2__0"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:450:1: rule__Connection__Group_2__0 : rule__Connection__Group_2__0__Impl rule__Connection__Group_2__1 ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:417:1: rule__Connection__Group_2__0 : rule__Connection__Group_2__0__Impl rule__Connection__Group_2__1 ;
     public final void rule__Connection__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:454:1: ( rule__Connection__Group_2__0__Impl rule__Connection__Group_2__1 )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:455:2: rule__Connection__Group_2__0__Impl rule__Connection__Group_2__1
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:421:1: ( rule__Connection__Group_2__0__Impl rule__Connection__Group_2__1 )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:422:2: rule__Connection__Group_2__0__Impl rule__Connection__Group_2__1
             {
-            pushFollow(FOLLOW_rule__Connection__Group_2__0__Impl_in_rule__Connection__Group_2__0857);
+            pushFollow(FOLLOW_rule__Connection__Group_2__0__Impl_in_rule__Connection__Group_2__0793);
             rule__Connection__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Connection__Group_2__1_in_rule__Connection__Group_2__0860);
+            pushFollow(FOLLOW_rule__Connection__Group_2__1_in_rule__Connection__Group_2__0796);
             rule__Connection__Group_2__1();
 
             state._fsp--;
@@ -1168,20 +1092,20 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__Group_2__0__Impl"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:462:1: rule__Connection__Group_2__0__Impl : ( ', ' ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:429:1: rule__Connection__Group_2__0__Impl : ( ', ' ) ;
     public final void rule__Connection__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:466:1: ( ( ', ' ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:467:1: ( ', ' )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:433:1: ( ( ', ' ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:434:1: ( ', ' )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:467:1: ( ', ' )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:468:1: ', '
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:434:1: ( ', ' )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:435:1: ', '
             {
              before(grammarAccess.getConnectionAccess().getCommaSpaceKeyword_2_0()); 
-            match(input,15,FOLLOW_15_in_rule__Connection__Group_2__0__Impl888); 
+            match(input,14,FOLLOW_14_in_rule__Connection__Group_2__0__Impl824); 
              after(grammarAccess.getConnectionAccess().getCommaSpaceKeyword_2_0()); 
 
             }
@@ -1205,16 +1129,16 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__Group_2__1"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:481:1: rule__Connection__Group_2__1 : rule__Connection__Group_2__1__Impl ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:448:1: rule__Connection__Group_2__1 : rule__Connection__Group_2__1__Impl ;
     public final void rule__Connection__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:485:1: ( rule__Connection__Group_2__1__Impl )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:486:2: rule__Connection__Group_2__1__Impl
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:452:1: ( rule__Connection__Group_2__1__Impl )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:453:2: rule__Connection__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__Connection__Group_2__1__Impl_in_rule__Connection__Group_2__1919);
+            pushFollow(FOLLOW_rule__Connection__Group_2__1__Impl_in_rule__Connection__Group_2__1855);
             rule__Connection__Group_2__1__Impl();
 
             state._fsp--;
@@ -1238,23 +1162,23 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__Group_2__1__Impl"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:492:1: rule__Connection__Group_2__1__Impl : ( ( rule__Connection__ConnectionAssignment_2_1 ) ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:459:1: rule__Connection__Group_2__1__Impl : ( ( rule__Connection__ConnectionAssignment_2_1 ) ) ;
     public final void rule__Connection__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:496:1: ( ( ( rule__Connection__ConnectionAssignment_2_1 ) ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:497:1: ( ( rule__Connection__ConnectionAssignment_2_1 ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:463:1: ( ( ( rule__Connection__ConnectionAssignment_2_1 ) ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:464:1: ( ( rule__Connection__ConnectionAssignment_2_1 ) )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:497:1: ( ( rule__Connection__ConnectionAssignment_2_1 ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:498:1: ( rule__Connection__ConnectionAssignment_2_1 )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:464:1: ( ( rule__Connection__ConnectionAssignment_2_1 ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:465:1: ( rule__Connection__ConnectionAssignment_2_1 )
             {
              before(grammarAccess.getConnectionAccess().getConnectionAssignment_2_1()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:499:1: ( rule__Connection__ConnectionAssignment_2_1 )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:499:2: rule__Connection__ConnectionAssignment_2_1
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:466:1: ( rule__Connection__ConnectionAssignment_2_1 )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:466:2: rule__Connection__ConnectionAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__Connection__ConnectionAssignment_2_1_in_rule__Connection__Group_2__1__Impl946);
+            pushFollow(FOLLOW_rule__Connection__ConnectionAssignment_2_1_in_rule__Connection__Group_2__1__Impl882);
             rule__Connection__ConnectionAssignment_2_1();
 
             state._fsp--;
@@ -1284,26 +1208,26 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Connection__Group_2__1__Impl"
 
 
-    // $ANTLR start "rule__Model__NodeAssignment"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:514:1: rule__Model__NodeAssignment : ( ruleNode ) ;
-    public final void rule__Model__NodeAssignment() throws RecognitionException {
+    // $ANTLR start "rule__Model__NodesAssignment"
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:481:1: rule__Model__NodesAssignment : ( ruleNode ) ;
+    public final void rule__Model__NodesAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:518:1: ( ( ruleNode ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:519:1: ( ruleNode )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:485:1: ( ( ruleNode ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:486:1: ( ruleNode )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:519:1: ( ruleNode )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:520:1: ruleNode
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:486:1: ( ruleNode )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:487:1: ruleNode
             {
-             before(grammarAccess.getModelAccess().getNodeNodeParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleNode_in_rule__Model__NodeAssignment985);
+             before(grammarAccess.getModelAccess().getNodesNodeParserRuleCall_0()); 
+            pushFollow(FOLLOW_ruleNode_in_rule__Model__NodesAssignment921);
             ruleNode();
 
             state._fsp--;
 
-             after(grammarAccess.getModelAccess().getNodeNodeParserRuleCall_0()); 
+             after(grammarAccess.getModelAccess().getNodesNodeParserRuleCall_0()); 
 
             }
 
@@ -1322,24 +1246,24 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Model__NodeAssignment"
+    // $ANTLR end "rule__Model__NodesAssignment"
 
 
     // $ANTLR start "rule__Node__NameAssignment_1"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:529:1: rule__Node__NameAssignment_1 : ( RULE_ID ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:496:1: rule__Node__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Node__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:533:1: ( ( RULE_ID ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:534:1: ( RULE_ID )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:500:1: ( ( RULE_ID ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:501:1: ( RULE_ID )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:534:1: ( RULE_ID )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:535:1: RULE_ID
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:501:1: ( RULE_ID )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:502:1: RULE_ID
             {
              before(grammarAccess.getNodeAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Node__NameAssignment_11016); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Node__NameAssignment_1952); 
              after(grammarAccess.getNodeAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -1363,23 +1287,23 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Node__ConnectionsAssignment_2"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:544:1: rule__Node__ConnectionsAssignment_2 : ( ( rule__Node__ConnectionsAlternatives_2_0 ) ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:511:1: rule__Node__ConnectionsAssignment_2 : ( ( rule__Node__ConnectionsAlternatives_2_0 ) ) ;
     public final void rule__Node__ConnectionsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:548:1: ( ( ( rule__Node__ConnectionsAlternatives_2_0 ) ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:549:1: ( ( rule__Node__ConnectionsAlternatives_2_0 ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:515:1: ( ( ( rule__Node__ConnectionsAlternatives_2_0 ) ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:516:1: ( ( rule__Node__ConnectionsAlternatives_2_0 ) )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:549:1: ( ( rule__Node__ConnectionsAlternatives_2_0 ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:550:1: ( rule__Node__ConnectionsAlternatives_2_0 )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:516:1: ( ( rule__Node__ConnectionsAlternatives_2_0 ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:517:1: ( rule__Node__ConnectionsAlternatives_2_0 )
             {
              before(grammarAccess.getNodeAccess().getConnectionsAlternatives_2_0()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:551:1: ( rule__Node__ConnectionsAlternatives_2_0 )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:551:2: rule__Node__ConnectionsAlternatives_2_0
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:518:1: ( rule__Node__ConnectionsAlternatives_2_0 )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:518:2: rule__Node__ConnectionsAlternatives_2_0
             {
-            pushFollow(FOLLOW_rule__Node__ConnectionsAlternatives_2_0_in_rule__Node__ConnectionsAssignment_21047);
+            pushFollow(FOLLOW_rule__Node__ConnectionsAlternatives_2_0_in_rule__Node__ConnectionsAssignment_2983);
             rule__Node__ConnectionsAlternatives_2_0();
 
             state._fsp--;
@@ -1410,24 +1334,24 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__ConnectionAssignment_1"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:560:1: rule__Connection__ConnectionAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:527:1: rule__Connection__ConnectionAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__Connection__ConnectionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:564:1: ( ( ( RULE_ID ) ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:565:1: ( ( RULE_ID ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:531:1: ( ( ( RULE_ID ) ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:532:1: ( ( RULE_ID ) )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:565:1: ( ( RULE_ID ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:566:1: ( RULE_ID )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:532:1: ( ( RULE_ID ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:533:1: ( RULE_ID )
             {
              before(grammarAccess.getConnectionAccess().getConnectionNodeCrossReference_1_0()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:567:1: ( RULE_ID )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:568:1: RULE_ID
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:534:1: ( RULE_ID )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:535:1: RULE_ID
             {
              before(grammarAccess.getConnectionAccess().getConnectionNodeIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_11084); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_11020); 
              after(grammarAccess.getConnectionAccess().getConnectionNodeIDTerminalRuleCall_1_0_1()); 
 
             }
@@ -1455,24 +1379,24 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Connection__ConnectionAssignment_2_1"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:579:1: rule__Connection__ConnectionAssignment_2_1 : ( ( RULE_ID ) ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:546:1: rule__Connection__ConnectionAssignment_2_1 : ( ( RULE_ID ) ) ;
     public final void rule__Connection__ConnectionAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:583:1: ( ( ( RULE_ID ) ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:584:1: ( ( RULE_ID ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:550:1: ( ( ( RULE_ID ) ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:551:1: ( ( RULE_ID ) )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:584:1: ( ( RULE_ID ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:585:1: ( RULE_ID )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:551:1: ( ( RULE_ID ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:552:1: ( RULE_ID )
             {
              before(grammarAccess.getConnectionAccess().getConnectionNodeCrossReference_2_1_0()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:586:1: ( RULE_ID )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:587:1: RULE_ID
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:553:1: ( RULE_ID )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:554:1: RULE_ID
             {
              before(grammarAccess.getConnectionAccess().getConnectionNodeIDTerminalRuleCall_2_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_2_11123); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_2_11059); 
              after(grammarAccess.getConnectionAccess().getConnectionNodeIDTerminalRuleCall_2_1_0_1()); 
 
             }
@@ -1500,24 +1424,24 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NoConnection__ConnectionAssignment"
-    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:598:1: rule__NoConnection__ConnectionAssignment : ( ( 'isolated' ) ) ;
+    // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:565:1: rule__NoConnection__ConnectionAssignment : ( ( 'isolated' ) ) ;
     public final void rule__NoConnection__ConnectionAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:602:1: ( ( ( 'isolated' ) ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:603:1: ( ( 'isolated' ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:569:1: ( ( ( 'isolated' ) ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:570:1: ( ( 'isolated' ) )
             {
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:603:1: ( ( 'isolated' ) )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:604:1: ( 'isolated' )
-            {
-             before(grammarAccess.getNoConnectionAccess().getConnectionIsolatedKeyword_0()); 
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:605:1: ( 'isolated' )
-            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:606:1: 'isolated'
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:570:1: ( ( 'isolated' ) )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:571:1: ( 'isolated' )
             {
              before(grammarAccess.getNoConnectionAccess().getConnectionIsolatedKeyword_0()); 
-            match(input,16,FOLLOW_16_in_rule__NoConnection__ConnectionAssignment1163); 
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:572:1: ( 'isolated' )
+            // ../ru.spbau.luchikhin.graph.ui/src-gen/ru/spbau/luchikhin/ui/contentassist/antlr/internal/InternalGraph.g:573:1: 'isolated'
+            {
+             before(grammarAccess.getNoConnectionAccess().getConnectionIsolatedKeyword_0()); 
+            match(input,15,FOLLOW_15_in_rule__NoConnection__ConnectionAssignment1099); 
              after(grammarAccess.getNoConnectionAccess().getConnectionIsolatedKeyword_0()); 
 
             }
@@ -1550,7 +1474,7 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel61 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel68 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__NodeAssignment_in_ruleModel94 = new BitSet(new long[]{0x0000000000000802L});
+    public static final BitSet FOLLOW_rule__Model__NodesAssignment_in_ruleModel94 = new BitSet(new long[]{0x0000000000000802L});
     public static final BitSet FOLLOW_ruleNode_in_entryRuleNode122 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleNode129 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Node__Group__0_in_ruleNode155 = new BitSet(new long[]{0x0000000000000002L});
@@ -1565,7 +1489,7 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__Node__Group__0__Impl_in_rule__Node__Group__0358 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Node__Group__1_in_rule__Node__Group__0361 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_11_in_rule__Node__Group__0__Impl389 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Node__Group__1__Impl_in_rule__Node__Group__1420 = new BitSet(new long[]{0x0000000000012000L});
+    public static final BitSet FOLLOW_rule__Node__Group__1__Impl_in_rule__Node__Group__1420 = new BitSet(new long[]{0x000000000000A000L});
     public static final BitSet FOLLOW_rule__Node__Group__2_in_rule__Node__Group__1423 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Node__NameAssignment_1_in_rule__Node__Group__1__Impl450 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Node__Group__2__Impl_in_rule__Node__Group__2480 = new BitSet(new long[]{0x0000000000001000L});
@@ -1576,24 +1500,21 @@ public class InternalGraphParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__Connection__Group__0__Impl_in_rule__Connection__Group__0607 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Connection__Group__1_in_rule__Connection__Group__0610 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_13_in_rule__Connection__Group__0__Impl638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Connection__Group__1__Impl_in_rule__Connection__Group__1669 = new BitSet(new long[]{0x000000000000C000L});
+    public static final BitSet FOLLOW_rule__Connection__Group__1__Impl_in_rule__Connection__Group__1669 = new BitSet(new long[]{0x0000000000004000L});
     public static final BitSet FOLLOW_rule__Connection__Group__2_in_rule__Connection__Group__1672 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Connection__ConnectionAssignment_1_in_rule__Connection__Group__1__Impl699 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Connection__Group__2__Impl_in_rule__Connection__Group__2729 = new BitSet(new long[]{0x000000000000C000L});
-    public static final BitSet FOLLOW_rule__Connection__Group__3_in_rule__Connection__Group__2732 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Connection__Group_2__0_in_rule__Connection__Group__2__Impl759 = new BitSet(new long[]{0x0000000000008002L});
-    public static final BitSet FOLLOW_rule__Connection__Group__3__Impl_in_rule__Connection__Group__3790 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Connection__Group__3__Impl818 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Connection__Group_2__0__Impl_in_rule__Connection__Group_2__0857 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Connection__Group_2__1_in_rule__Connection__Group_2__0860 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__Connection__Group_2__0__Impl888 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Connection__Group_2__1__Impl_in_rule__Connection__Group_2__1919 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Connection__ConnectionAssignment_2_1_in_rule__Connection__Group_2__1__Impl946 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNode_in_rule__Model__NodeAssignment985 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Node__NameAssignment_11016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Node__ConnectionsAlternatives_2_0_in_rule__Node__ConnectionsAssignment_21047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_11084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_2_11123 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__NoConnection__ConnectionAssignment1163 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Connection__Group__2__Impl_in_rule__Connection__Group__2729 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Connection__Group_2__0_in_rule__Connection__Group__2__Impl756 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_rule__Connection__Group_2__0__Impl_in_rule__Connection__Group_2__0793 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Connection__Group_2__1_in_rule__Connection__Group_2__0796 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Connection__Group_2__0__Impl824 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Connection__Group_2__1__Impl_in_rule__Connection__Group_2__1855 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Connection__ConnectionAssignment_2_1_in_rule__Connection__Group_2__1__Impl882 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNode_in_rule__Model__NodesAssignment921 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Node__NameAssignment_1952 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Node__ConnectionsAlternatives_2_0_in_rule__Node__ConnectionsAssignment_2983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_11020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Connection__ConnectionAssignment_2_11059 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__NoConnection__ConnectionAssignment1099 = new BitSet(new long[]{0x0000000000000002L});
 
 }

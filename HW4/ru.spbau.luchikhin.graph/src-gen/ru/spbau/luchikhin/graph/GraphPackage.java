@@ -67,13 +67,13 @@ public interface GraphPackage extends EPackage
   int MODEL = 0;
 
   /**
-   * The feature id for the '<em><b>Node</b></em>' containment reference list.
+   * The feature id for the '<em><b>Nodes</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL__NODE = 0;
+  int MODEL__NODES = 0;
 
   /**
    * The number of structural features of the '<em>Model</em>' class.
@@ -189,15 +189,15 @@ public interface GraphPackage extends EPackage
   EClass getModel();
 
   /**
-   * Returns the meta object for the containment reference list '{@link ru.spbau.luchikhin.graph.Model#getNode <em>Node</em>}'.
+   * Returns the meta object for the containment reference list '{@link ru.spbau.luchikhin.graph.Model#getNodes <em>Nodes</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Node</em>'.
-   * @see ru.spbau.luchikhin.graph.Model#getNode()
+   * @return the meta object for the containment reference list '<em>Nodes</em>'.
+   * @see ru.spbau.luchikhin.graph.Model#getNodes()
    * @see #getModel()
    * @generated
    */
-  EReference getModel_Node();
+  EReference getModel_Nodes();
 
   /**
    * Returns the meta object for class '{@link ru.spbau.luchikhin.graph.Node <em>Node</em>}'.
@@ -307,12 +307,12 @@ public interface GraphPackage extends EPackage
     EClass MODEL = eINSTANCE.getModel();
 
     /**
-     * The meta object literal for the '<em><b>Node</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Nodes</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference MODEL__NODE = eINSTANCE.getModel_Node();
+    EReference MODEL__NODES = eINSTANCE.getModel_Nodes();
 
     /**
      * The meta object literal for the '{@link ru.spbau.luchikhin.graph.impl.NodeImpl <em>Node</em>}' class.

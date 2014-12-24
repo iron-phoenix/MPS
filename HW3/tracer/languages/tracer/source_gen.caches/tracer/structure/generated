@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-4nb1icw4cmhgrshlg1hmrrjnxbljs61">
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
+  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common hash="5i53p7osd02qykbvupvlmuckud4eh6a" dependsOnNodes="true">
+    <dep root="1180016765149961969" />
+    <dep root="1180016765149981984" />
+    <dep root="1180016765149981988" />
+    <dep root="1812980409690692916" />
+    <dep root="1812980409699702693" />
+    <dep root="5504672902128765330" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="StructureAspectDescriptor.java" />
+  </common>
+  <source id="1180016765149961969" name="Tracer" hash="d54lpnp6m6dacz5fwnduv5fzqalertm" />
+  <source id="1180016765149981984" name="ModificationsTracer" hash="-29bvebrv54mdtxg3uh9xqona35bn7ni" />
+  <source id="1180016765149981988" name="Log" hash="-3gf0nqputykc0hha80zqkx150r13dgr" />
+  <source id="5504672902128765330" name="ReferencesTracer" hash="-37tx3i6e6h4nsdh0cgnn3mup8offsnn" />
+  <source id="1812980409690692916" name="CallingTracer" hash="3swbx1z9u3ntilhy5a279vz3aiup4q7" />
+  <source id="1812980409699702693" name="LogFormat" hash="-5p4lmoeizwr7ks3o9wc0oe467hdiu63" />
+</dependencies>
+

@@ -80,16 +80,16 @@ ruleModel returns [EObject current=null]
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getModelAccess().getNodeNodeParserRuleCall_0()); 
+	        newCompositeNode(grammarAccess.getModelAccess().getNodesNodeParserRuleCall_0()); 
 	    }
-		lv_node_0_0=ruleNode		{
+		lv_nodes_0_0=ruleNode		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getModelRule());
 	        }
        		add(
        			$current, 
-       			"node",
-        		lv_node_0_0, 
+       			"nodes",
+        		lv_nodes_0_0, 
         		"Node");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -199,7 +199,7 @@ ruleConnection returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='is connected with [' 
+(	otherlv_0='is connected with ' 
     {
     	newLeafNode(otherlv_0, grammarAccess.getConnectionAccess().getIsConnectedWithKeyword_0());
     }
@@ -233,11 +233,7 @@ ruleConnection returns [EObject current=null]
 	}
 
 )
-))*	otherlv_4=']' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getConnectionAccess().getRightSquareBracketKeyword_3());
-    }
-)
+))*)
 ;
 
 

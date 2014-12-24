@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalGraphParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'node'", "';'", "'is connected with ['", "', '", "']'", "'isolated'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'node'", "';'", "'is connected with '", "', '", "'isolated'"
     };
     public static final int RULE_ID=4;
     public static final int RULE_WS=9;
@@ -29,7 +29,6 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
     public static final int RULE_ANY_OTHER=10;
     public static final int RULE_SL_COMMENT=8;
     public static final int T__15=15;
-    public static final int T__16=16;
     public static final int RULE_INT=5;
     public static final int T__11=11;
     public static final int RULE_ML_COMMENT=7;
@@ -113,20 +112,20 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleModel"
-    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:76:1: ruleModel returns [EObject current=null] : ( (lv_node_0_0= ruleNode ) )* ;
+    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:76:1: ruleModel returns [EObject current=null] : ( (lv_nodes_0_0= ruleNode ) )* ;
     public final EObject ruleModel() throws RecognitionException {
         EObject current = null;
 
-        EObject lv_node_0_0 = null;
+        EObject lv_nodes_0_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:79:28: ( ( (lv_node_0_0= ruleNode ) )* )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:80:1: ( (lv_node_0_0= ruleNode ) )*
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:79:28: ( ( (lv_nodes_0_0= ruleNode ) )* )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:80:1: ( (lv_nodes_0_0= ruleNode ) )*
             {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:80:1: ( (lv_node_0_0= ruleNode ) )*
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:80:1: ( (lv_nodes_0_0= ruleNode ) )*
             loop1:
             do {
                 int alt1=2;
@@ -139,16 +138,16 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
 
                 switch (alt1) {
             	case 1 :
-            	    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:81:1: (lv_node_0_0= ruleNode )
+            	    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:81:1: (lv_nodes_0_0= ruleNode )
             	    {
-            	    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:81:1: (lv_node_0_0= ruleNode )
-            	    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:82:3: lv_node_0_0= ruleNode
+            	    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:81:1: (lv_nodes_0_0= ruleNode )
+            	    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:82:3: lv_nodes_0_0= ruleNode
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getModelAccess().getNodeNodeParserRuleCall_0()); 
+            	    	        newCompositeNode(grammarAccess.getModelAccess().getNodesNodeParserRuleCall_0()); 
             	    	    
             	    pushFollow(FOLLOW_ruleNode_in_ruleModel130);
-            	    lv_node_0_0=ruleNode();
+            	    lv_nodes_0_0=ruleNode();
 
             	    state._fsp--;
 
@@ -158,8 +157,8 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
             	    	        }
             	           		add(
             	           			current, 
-            	           			"node",
-            	            		lv_node_0_0, 
+            	           			"nodes",
+            	            		lv_nodes_0_0, 
             	            		"Node");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -293,7 +292,7 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
             if ( (LA2_0==13) ) {
                 alt2=1;
             }
-            else if ( (LA2_0==16) ) {
+            else if ( (LA2_0==15) ) {
                 alt2=2;
             }
             else {
@@ -423,7 +422,7 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleConnection"
-    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:198:1: ruleConnection returns [EObject current=null] : (otherlv_0= 'is connected with [' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* otherlv_4= ']' ) ;
+    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:198:1: ruleConnection returns [EObject current=null] : (otherlv_0= 'is connected with ' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* ) ;
     public final EObject ruleConnection() throws RecognitionException {
         EObject current = null;
 
@@ -431,16 +430,15 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
         Token otherlv_1=null;
         Token otherlv_2=null;
         Token otherlv_3=null;
-        Token otherlv_4=null;
 
          enterRule(); 
             
         try {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:201:28: ( (otherlv_0= 'is connected with [' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* otherlv_4= ']' ) )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:202:1: (otherlv_0= 'is connected with [' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* otherlv_4= ']' )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:201:28: ( (otherlv_0= 'is connected with ' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* ) )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:202:1: (otherlv_0= 'is connected with ' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* )
             {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:202:1: (otherlv_0= 'is connected with [' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* otherlv_4= ']' )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:202:3: otherlv_0= 'is connected with [' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* otherlv_4= ']'
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:202:1: (otherlv_0= 'is connected with ' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )* )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:202:3: otherlv_0= 'is connected with ' ( (otherlv_1= RULE_ID ) ) (otherlv_2= ', ' ( (otherlv_3= RULE_ID ) ) )*
             {
             otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleConnection375); 
 
@@ -516,10 +514,6 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleConnection442); 
-
-                	newLeafNode(otherlv_4, grammarAccess.getConnectionAccess().getRightSquareBracketKeyword_3());
-                
 
             }
 
@@ -541,7 +535,7 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleNoConnection"
-    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:248:1: entryRuleNoConnection returns [EObject current=null] : iv_ruleNoConnection= ruleNoConnection EOF ;
+    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:244:1: entryRuleNoConnection returns [EObject current=null] : iv_ruleNoConnection= ruleNoConnection EOF ;
     public final EObject entryRuleNoConnection() throws RecognitionException {
         EObject current = null;
 
@@ -549,17 +543,17 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:249:2: (iv_ruleNoConnection= ruleNoConnection EOF )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:250:2: iv_ruleNoConnection= ruleNoConnection EOF
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:245:2: (iv_ruleNoConnection= ruleNoConnection EOF )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:246:2: iv_ruleNoConnection= ruleNoConnection EOF
             {
              newCompositeNode(grammarAccess.getNoConnectionRule()); 
-            pushFollow(FOLLOW_ruleNoConnection_in_entryRuleNoConnection478);
+            pushFollow(FOLLOW_ruleNoConnection_in_entryRuleNoConnection466);
             iv_ruleNoConnection=ruleNoConnection();
 
             state._fsp--;
 
              current =iv_ruleNoConnection; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleNoConnection488); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleNoConnection476); 
 
             }
 
@@ -577,7 +571,7 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleNoConnection"
-    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:257:1: ruleNoConnection returns [EObject current=null] : ( (lv_connection_0_0= 'isolated' ) ) ;
+    // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:253:1: ruleNoConnection returns [EObject current=null] : ( (lv_connection_0_0= 'isolated' ) ) ;
     public final EObject ruleNoConnection() throws RecognitionException {
         EObject current = null;
 
@@ -586,16 +580,16 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:260:28: ( ( (lv_connection_0_0= 'isolated' ) ) )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:261:1: ( (lv_connection_0_0= 'isolated' ) )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:256:28: ( ( (lv_connection_0_0= 'isolated' ) ) )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:257:1: ( (lv_connection_0_0= 'isolated' ) )
             {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:261:1: ( (lv_connection_0_0= 'isolated' ) )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:262:1: (lv_connection_0_0= 'isolated' )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:257:1: ( (lv_connection_0_0= 'isolated' ) )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:258:1: (lv_connection_0_0= 'isolated' )
             {
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:262:1: (lv_connection_0_0= 'isolated' )
-            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:263:3: lv_connection_0_0= 'isolated'
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:258:1: (lv_connection_0_0= 'isolated' )
+            // ../ru.spbau.luchikhin.graph/src-gen/ru/spbau/luchikhin/parser/antlr/internal/InternalGraph.g:259:3: lv_connection_0_0= 'isolated'
             {
-            lv_connection_0_0=(Token)match(input,16,FOLLOW_16_in_ruleNoConnection530); 
+            lv_connection_0_0=(Token)match(input,15,FOLLOW_15_in_ruleNoConnection518); 
 
                     newLeafNode(lv_connection_0_0, grammarAccess.getNoConnectionAccess().getConnectionIsolatedKeyword_0());
                 
@@ -638,19 +632,18 @@ public class InternalGraphParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleNode_in_entryRuleNode166 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleNode176 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_11_in_ruleNode213 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleNode230 = new BitSet(new long[]{0x0000000000012000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleNode230 = new BitSet(new long[]{0x000000000000A000L});
     public static final BitSet FOLLOW_ruleConnection_in_ruleNode258 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_ruleNoConnection_in_ruleNode277 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_12_in_ruleNode292 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleConnection_in_entryRuleConnection328 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleConnection338 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_13_in_ruleConnection375 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleConnection395 = new BitSet(new long[]{0x000000000000C000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleConnection395 = new BitSet(new long[]{0x0000000000004002L});
     public static final BitSet FOLLOW_14_in_ruleConnection408 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleConnection428 = new BitSet(new long[]{0x000000000000C000L});
-    public static final BitSet FOLLOW_15_in_ruleConnection442 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNoConnection_in_entryRuleNoConnection478 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleNoConnection488 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_ruleNoConnection530 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleConnection428 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_ruleNoConnection_in_entryRuleNoConnection466 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleNoConnection476 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_ruleNoConnection518 = new BitSet(new long[]{0x0000000000000002L});
 
 }

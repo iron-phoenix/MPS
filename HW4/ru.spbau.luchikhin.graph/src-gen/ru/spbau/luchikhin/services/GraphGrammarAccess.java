@@ -20,18 +20,18 @@ public class GraphGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
-		private final Assignment cNodeAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cNodeNodeParserRuleCall_0 = (RuleCall)cNodeAssignment.eContents().get(0);
+		private final Assignment cNodesAssignment = (Assignment)rule.eContents().get(1);
+		private final RuleCall cNodesNodeParserRuleCall_0 = (RuleCall)cNodesAssignment.eContents().get(0);
 		
 		//Model:
-		//	node+=Node*;
+		//	nodes+=Node*;
 		public ParserRule getRule() { return rule; }
 
-		//node+=Node*
-		public Assignment getNodeAssignment() { return cNodeAssignment; }
+		//nodes+=Node*
+		public Assignment getNodesAssignment() { return cNodesAssignment; }
 
 		//Node
-		public RuleCall getNodeNodeParserRuleCall_0() { return cNodeNodeParserRuleCall_0; }
+		public RuleCall getNodesNodeParserRuleCall_0() { return cNodesNodeParserRuleCall_0; }
 	}
 
 	public class NodeElements extends AbstractParserRuleElementFinder {
@@ -90,16 +90,15 @@ public class GraphGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cConnectionAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final CrossReference cConnectionNodeCrossReference_2_1_0 = (CrossReference)cConnectionAssignment_2_1.eContents().get(0);
 		private final RuleCall cConnectionNodeIDTerminalRuleCall_2_1_0_1 = (RuleCall)cConnectionNodeCrossReference_2_1_0.eContents().get(1);
-		private final Keyword cRightSquareBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
 		//Connection:
-		//	"is connected with [" connection+=[Node] (", " connection+=[Node])* "]";
+		//	"is connected with " connection+=[Node] (", " connection+=[Node])*;
 		public ParserRule getRule() { return rule; }
 
-		//"is connected with [" connection+=[Node] (", " connection+=[Node])* "]"
+		//"is connected with " connection+=[Node] (", " connection+=[Node])*
 		public Group getGroup() { return cGroup; }
 
-		//"is connected with ["
+		//"is connected with "
 		public Keyword getIsConnectedWithKeyword_0() { return cIsConnectedWithKeyword_0; }
 
 		//connection+=[Node]
@@ -125,9 +124,6 @@ public class GraphGrammarAccess extends AbstractGrammarElementFinder {
 
 		//ID
 		public RuleCall getConnectionNodeIDTerminalRuleCall_2_1_0_1() { return cConnectionNodeIDTerminalRuleCall_2_1_0_1; }
-
-		//"]"
-		public Keyword getRightSquareBracketKeyword_3() { return cRightSquareBracketKeyword_3; }
 	}
 
 	public class NoConnectionElements extends AbstractParserRuleElementFinder {
@@ -195,7 +191,7 @@ public class GraphGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Model:
-	//	node+=Node*;
+	//	nodes+=Node*;
 	public ModelElements getModelAccess() {
 		return pModel;
 	}
@@ -215,7 +211,7 @@ public class GraphGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Connection:
-	//	"is connected with [" connection+=[Node] (", " connection+=[Node])* "]";
+	//	"is connected with " connection+=[Node] (", " connection+=[Node])*;
 	public ConnectionElements getConnectionAccess() {
 		return pConnection;
 	}

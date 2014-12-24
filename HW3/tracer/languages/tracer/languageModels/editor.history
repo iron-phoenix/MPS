@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="c9jj" modelUID="r:2a5d0725-b9b5-4e9a-bd47-1109a02ed5f9(tracer.behavior)" version="-1" />
+      <model index="kvbi" modelUID="r:ba213999-18ed-4ffb-ae80-1009aec113e5(tracer.structure)" version="8" />
+      <model index="875d" modelUID="r:838a1173-ef7b-4efd-ba0a-8ce1754c2f5e(tracer.typesystem)" version="-1" />
+      <model index="n2hy" modelUID="r:52c525de-20f3-4c76-9c5c-8b1c4a2855d2(tracer.constraints)" version="-1" />
+      <model index="i9bf" modelUID="r:f096dbd1-d545-498b-9634-f5fef660120f(tracer.editor)" version="-1" />
+      <model index="ebrf" modelUID="r:6e22c347-2a6b-4e7e-a8dc-7d2326f4eb11(tracer.generator.template.main@generator)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:f096dbd1-d545-498b-9634-f5fef660120f(tracer.editor)" newModel="r:f096dbd1-d545-498b-9634-f5fef660120f(Tracer.editor)" />
+    <RenameModel oldModel="r:2a5d0725-b9b5-4e9a-bd47-1109a02ed5f9(tracer.behavior)" newModel="r:2a5d0725-b9b5-4e9a-bd47-1109a02ed5f9(Tracer.behavior)" />
+    <RenameModel oldModel="r:ba213999-18ed-4ffb-ae80-1009aec113e5(tracer.structure)" newModel="r:ba213999-18ed-4ffb-ae80-1009aec113e5(Tracer.structure)" />
+    <RenameModel oldModel="r:838a1173-ef7b-4efd-ba0a-8ce1754c2f5e(tracer.typesystem)" newModel="r:838a1173-ef7b-4efd-ba0a-8ce1754c2f5e(Tracer.typesystem)" />
+    <RenameModel oldModel="r:52c525de-20f3-4c76-9c5c-8b1c4a2855d2(tracer.constraints)" newModel="r:52c525de-20f3-4c76-9c5c-8b1c4a2855d2(Tracer.constraints)" />
+    <RenameModel oldModel="r:6e22c347-2a6b-4e7e-a8dc-7d2326f4eb11(tracer.generator.template.main@generator)" newModel="r:6e22c347-2a6b-4e7e-a8dc-7d2326f4eb11(Tracer.generator.template.main@generator)" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="c9jj" modelUID="r:2a5d0725-b9b5-4e9a-bd47-1109a02ed5f9(Tracer.behavior)" version="0" />
+      <model index="kvbi" modelUID="r:ba213999-18ed-4ffb-ae80-1009aec113e5(Tracer.structure)" version="9" />
+      <model index="875d" modelUID="r:838a1173-ef7b-4efd-ba0a-8ce1754c2f5e(Tracer.typesystem)" version="0" />
+      <model index="n2hy" modelUID="r:52c525de-20f3-4c76-9c5c-8b1c4a2855d2(Tracer.constraints)" version="0" />
+      <model index="i9bf" modelUID="r:f096dbd1-d545-498b-9634-f5fef660120f(Tracer.editor)" version="0" />
+      <model index="ebrf" modelUID="r:6e22c347-2a6b-4e7e-a8dc-7d2326f4eb11(Tracer.generator.template.main@generator)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:f096dbd1-d545-498b-9634-f5fef660120f(Tracer.editor)" newModel="r:f096dbd1-d545-498b-9634-f5fef660120f(tracer.editor)" />
+    <RenameModel oldModel="r:2a5d0725-b9b5-4e9a-bd47-1109a02ed5f9(Tracer.behavior)" newModel="r:2a5d0725-b9b5-4e9a-bd47-1109a02ed5f9(tracer.behavior)" />
+    <RenameModel oldModel="r:ba213999-18ed-4ffb-ae80-1009aec113e5(Tracer.structure)" newModel="r:ba213999-18ed-4ffb-ae80-1009aec113e5(tracer.structure)" />
+    <RenameModel oldModel="r:838a1173-ef7b-4efd-ba0a-8ce1754c2f5e(Tracer.typesystem)" newModel="r:838a1173-ef7b-4efd-ba0a-8ce1754c2f5e(tracer.typesystem)" />
+    <RenameModel oldModel="r:52c525de-20f3-4c76-9c5c-8b1c4a2855d2(Tracer.constraints)" newModel="r:52c525de-20f3-4c76-9c5c-8b1c4a2855d2(tracer.constraints)" />
+    <RenameModel oldModel="r:6e22c347-2a6b-4e7e-a8dc-7d2326f4eb11(Tracer.generator.template.main@generator)" newModel="r:6e22c347-2a6b-4e7e-a8dc-7d2326f4eb11(tracer.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+

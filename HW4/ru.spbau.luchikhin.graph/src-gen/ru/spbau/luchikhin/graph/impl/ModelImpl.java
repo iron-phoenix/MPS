@@ -27,7 +27,7 @@ import ru.spbau.luchikhin.graph.Node;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link ru.spbau.luchikhin.graph.impl.ModelImpl#getNode <em>Node</em>}</li>
+ *   <li>{@link ru.spbau.luchikhin.graph.impl.ModelImpl#getNodes <em>Nodes</em>}</li>
  * </ul>
  * </p>
  *
@@ -36,14 +36,14 @@ import ru.spbau.luchikhin.graph.Node;
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 {
   /**
-   * The cached value of the '{@link #getNode() <em>Node</em>}' containment reference list.
+   * The cached value of the '{@link #getNodes() <em>Nodes</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getNode()
+   * @see #getNodes()
    * @generated
    * @ordered
    */
-  protected EList<Node> node;
+  protected EList<Node> nodes;
 
   /**
    * <!-- begin-user-doc -->
@@ -71,13 +71,13 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Node> getNode()
+  public EList<Node> getNodes()
   {
-    if (node == null)
+    if (nodes == null)
     {
-      node = new EObjectContainmentEList<Node>(Node.class, this, GraphPackage.MODEL__NODE);
+      nodes = new EObjectContainmentEList<Node>(Node.class, this, GraphPackage.MODEL__NODES);
     }
-    return node;
+    return nodes;
   }
 
   /**
@@ -90,8 +90,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case GraphPackage.MODEL__NODE:
-        return ((InternalEList<?>)getNode()).basicRemove(otherEnd, msgs);
+      case GraphPackage.MODEL__NODES:
+        return ((InternalEList<?>)getNodes()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -106,8 +106,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case GraphPackage.MODEL__NODE:
-        return getNode();
+      case GraphPackage.MODEL__NODES:
+        return getNodes();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -123,9 +123,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case GraphPackage.MODEL__NODE:
-        getNode().clear();
-        getNode().addAll((Collection<? extends Node>)newValue);
+      case GraphPackage.MODEL__NODES:
+        getNodes().clear();
+        getNodes().addAll((Collection<? extends Node>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +141,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case GraphPackage.MODEL__NODE:
-        getNode().clear();
+      case GraphPackage.MODEL__NODES:
+        getNodes().clear();
         return;
     }
     super.eUnset(featureID);
@@ -158,8 +158,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
-      case GraphPackage.MODEL__NODE:
-        return node != null && !node.isEmpty();
+      case GraphPackage.MODEL__NODES:
+        return nodes != null && !nodes.isEmpty();
     }
     return super.eIsSet(featureID);
   }

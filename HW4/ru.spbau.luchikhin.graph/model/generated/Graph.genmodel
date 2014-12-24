@@ -8,7 +8,7 @@
   <genPackages prefix="Graph" basePackage="ru.spbau.luchikhin" disposableProviderFactory="true"
       fileExtensions="graph" ecorePackage="Graph.ecore#/">
     <genClasses ecoreClass="Graph.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Graph.ecore#//Model/node"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Graph.ecore#//Model/nodes"/>
     </genClasses>
     <genClasses ecoreClass="Graph.ecore#//Node">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Graph.ecore#//Node/name"/>

@@ -3,14 +3,14 @@ grammar ru.spbau.luchikhin.Graph with org.eclipse.xtext.common.Terminals
 generate graph "http://www.spbau.ru/luchikhin/Graph"
 
 Model:
-	(node+=Node)*;
+	(nodes+=Node)*;
 
 Node:
 	'node' name=ID connections=(Connection | NoConnection)';'
 ;
 
 Connection:
-	'is connected with ['connection+=[Node] (', ' connection+=[Node])*']'
+	'is connected with 'connection+=[Node] (', ' connection+=[Node])*
 ;
 
 NoConnection:

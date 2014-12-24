@@ -3,6 +3,14 @@
  */
 package ru.spbau.luchikhin.validation;
 
+import com.google.common.base.Objects;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.validation.Check;
+import ru.spbau.luchikhin.graph.Connection;
+import ru.spbau.luchikhin.graph.GraphPackage;
+import ru.spbau.luchikhin.graph.Model;
+import ru.spbau.luchikhin.graph.Node;
 import ru.spbau.luchikhin.validation.AbstractGraphValidator;
 
 /**
@@ -12,4 +20,50 @@ import ru.spbau.luchikhin.validation.AbstractGraphValidator;
  */
 @SuppressWarnings("all")
 public class GraphValidator extends AbstractGraphValidator {
+  @Check
+  public void checkNodeNameIsUnique(final Node node) {
+    EObject _eContainer = node.eContainer();
+    Model model = ((Model) _eContainer);
+    EList<Node> _nodes = model.getNodes();
+    for (final Node other : _nodes) {
+      boolean _and = false;
+      String _name = node.getName();
+      String _name_1 = other.getName();
+      boolean _equals = _name.equals(_name_1);
+      if (!_equals) {
+        _and = false;
+      } else {
+        boolean _notEquals = (!Objects.equal(node, other));
+        _and = _notEquals;
+      }
+      if (_and) {
+        this.error("Node names have to be unique", GraphPackage.Literals.NODE__NAME);
+        return;
+      }
+    }
+  }
+  
+  @Check
+  public void checkConnectionIsUnique(final Connection connection) {
+    EList<Node> _connection = connection.getConnection();
+    for (final Node one : _connection) {
+      {
+        int count = 0;
+        EList<Node> _connection_1 = connection.getConnection();
+        for (final Node other : _connection_1) {
+          String _name = one.getName();
+          String _name_1 = other.getName();
+          boolean _equals = _name.equals(_name_1);
+          if (_equals) {
+            int _count = count;
+            count = (_count + 1);
+          }
+        }
+        if ((count > 1)) {
+          this.error("Node names have to be unique in connections", GraphPackage.Literals.CONNECTION__CONNECTION);
+          return;
+        }
+      }
+    }
+  }
 }

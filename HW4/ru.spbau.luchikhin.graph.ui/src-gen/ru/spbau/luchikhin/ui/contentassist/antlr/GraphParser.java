@@ -41,7 +41,7 @@ public class GraphParser extends AbstractContentAssistParser {
 					put(grammarAccess.getNodeAccess().getGroup(), "rule__Node__Group__0");
 					put(grammarAccess.getConnectionAccess().getGroup(), "rule__Connection__Group__0");
 					put(grammarAccess.getConnectionAccess().getGroup_2(), "rule__Connection__Group_2__0");
-					put(grammarAccess.getModelAccess().getNodeAssignment(), "rule__Model__NodeAssignment");
+					put(grammarAccess.getModelAccess().getNodesAssignment(), "rule__Model__NodesAssignment");
 					put(grammarAccess.getNodeAccess().getNameAssignment_1(), "rule__Node__NameAssignment_1");
 					put(grammarAccess.getNodeAccess().getConnectionsAssignment_2(), "rule__Node__ConnectionsAssignment_2");
 					put(grammarAccess.getConnectionAccess().getConnectionAssignment_1(), "rule__Connection__ConnectionAssignment_1");

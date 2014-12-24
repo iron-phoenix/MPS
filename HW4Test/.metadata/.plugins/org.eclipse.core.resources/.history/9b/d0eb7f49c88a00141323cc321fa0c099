@@ -1,0 +1,5 @@
+node A is connected with B;
+node B is connected with A, B;
+node C isolated;
+node D is connected with B;
+node E is connected with A, B;
